@@ -1,0 +1,71 @@
+1
+00:00:05,200 --> 00:00:08,200
+A is apple, shiny and red.
+
+2
+00:00:08,200 --> 00:00:11,700
+B is balloon, floating over my head.
+
+3
+00:00:11,700 --> 00:00:14,700
+C is car, going beep, beep, beep.
+
+4
+00:00:14,700 --> 00:00:18,500
+D is dinosaur, stomping with big, big feet.
+
+5
+00:00:18,500 --> 00:00:21,600
+E is elephant, big and gray.
+
+6
+00:00:21,600 --> 00:00:24,700
+F is fire truck, racing all day.
+
+7
+00:00:24,700 --> 00:00:27,900
+G is giraffe, so tall and bright.
+
+8
+00:00:27,900 --> 00:00:31,500
+H is helicopter, flying in the sky.
+
+9
+00:00:31,500 --> 00:00:34,600
+A, B, C, come and sing with me.
+
+10
+00:00:34,600 --> 00:00:37,800
+Learning letters happily.
+
+11
+00:00:37,800 --> 00:00:41,000
+Dancing, jumping, one, two, three.
+
+12
+00:00:41,000 --> 00:00:44,300
+Fun for every family.
+
+13
+00:00:44,300 --> 00:00:47,300
+I is ice cream, sweet and cold.
+
+14
+00:00:47,300 --> 00:00:50,300
+J is jellyfish, purple and gold.
+
+15
+00:00:50,300 --> 00:00:53,100
+K is kite, flying way up high.
+
+16
+00:00:53,100 --> 00:00:56,200
+L is lion, giving a roar so loud.
+
+17
+00:00:56,200 --> 00:00:58,300
+M is monkey, swinging on trees.
+
+18
+00:00:58,300 --> 00:01:00,000
+N is nest.

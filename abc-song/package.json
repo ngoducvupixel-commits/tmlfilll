@@ -1,0 +1,12 @@
+{
+  "name": "mochi-abc-song",
+  "private": true,
+  "type": "module",
+  "description": "Mochi Family ABC song: a Three.js music video synced to an SRT + audio track.",
+  "scripts": {
+    "serve": "npx --yes http-server -p 8080 -c-1 .",
+    "render": "node tools/render.mjs"
+  },
+  "dependencies": { "three": "0.169.0" },
+  "devDependencies": { "playwright": "1.56.1" }
+}
