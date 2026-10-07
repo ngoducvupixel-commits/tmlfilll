@@ -1,0 +1,16 @@
+{
+  "name": "pip-dual-mode",
+  "private": true,
+  "type": "module",
+  "description": "A ~52s Three.js motion piece rendered in the browser; open index.html or render to MP4.",
+  "scripts": {
+    "serve": "npx --yes http-server -p 8080 -c-1 .",
+    "render": "node tools/render.mjs"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  }
+}
