@@ -1,0 +1,172 @@
+{
+ "duration": 35.0,
+ "cues": [
+  {
+   "id": "tick",
+   "t": 0.6,
+   "dur": 0.05,
+   "kind": "sfx"
+  },
+  {
+   "id": "tick2",
+   "t": 1.4,
+   "dur": 0.05,
+   "kind": "sfx"
+  },
+  {
+   "id": "tick3",
+   "t": 2.2,
+   "dur": 0.05,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_ooh",
+   "t": 3.4,
+   "dur": 1.19,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_no",
+   "t": 5.3,
+   "dur": 0.418,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "milo_NO",
+   "t": 7.0,
+   "dur": 0.418,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "pip_wasnt",
+   "t": 8.6,
+   "dur": 0.658,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "glasses",
+   "t": 10.3,
+   "dur": 0.03,
+   "kind": "sfx"
+  },
+  {
+   "id": "lumi_stat",
+   "t": 10.6,
+   "dur": 2.568,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "pip_how",
+   "t": 13.2,
+   "dur": 0.594,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "lumi_pip",
+   "t": 15.1,
+   "dur": 0.915,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "pip_wow",
+   "t": 16.1,
+   "dur": 0.345,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "snort",
+   "t": 16.6,
+   "dur": 0.18,
+   "kind": "sfx"
+  },
+  {
+   "id": "giggle",
+   "t": 16.85,
+   "dur": 0.34,
+   "kind": "sfx"
+  },
+  {
+   "id": "sniff",
+   "t": 18.6,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "sniff2",
+   "t": 19.4,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "button",
+   "t": 23.5,
+   "dur": 1.15,
+   "kind": "sfx"
+  },
+  {
+   "id": "milo_bobo",
+   "t": 26.4,
+   "dur": 0.633,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "hum_ramp",
+   "t": 27.0,
+   "dur": 2.0,
+   "kind": "sfx"
+  },
+  {
+   "id": "alarm",
+   "t": 27.6,
+   "dur": 1.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "clunk",
+   "t": 28.6,
+   "dur": 1.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "poof",
+   "t": 29.0,
+   "dur": 1.9,
+   "kind": "sfx"
+  },
+  {
+   "id": "smoke",
+   "t": 29.3,
+   "dur": 2.0,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_worth",
+   "t": 31.8,
+   "dur": 0.351,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_family",
+   "t": 33.2,
+   "dur": 0.744,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "yip",
+   "t": 34.4,
+   "dur": 0.16,
+   "kind": "sfx"
+  }
+ ]
+}

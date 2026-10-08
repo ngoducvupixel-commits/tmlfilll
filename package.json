@@ -1,0 +1,14 @@
+{
+  "name": "mochi-channel",
+  "private": true,
+  "type": "module",
+  "description": "Mochi Family channel: shared Three.js engine, characters, generated audio, and one folder per episode.",
+  "scripts": {
+    "serve": "npx --yes http-server -p 8080 -c-1 .",
+    "render": "node tools/render.mjs",
+    "new": "node tools/new-episode.mjs",
+    "check": "node tools/check.mjs"
+  },
+  "dependencies": { "three": "0.169.0" },
+  "devDependencies": { "playwright": "1.56.1" }
+}

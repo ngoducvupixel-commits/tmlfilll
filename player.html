@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mochi Player</title>
+  <style>
+    @font-face { font-family: "Fredoka"; src: url("engine/assets/fonts/Fredoka-Bold.ttf") format("truetype"); font-weight: 700; font-display: block; }
+    :root { --bg: #fff4ea; --fg: #4a2a1a; --muted: #9a7f70; --accent: #ff8a2a; --panel: #ffffff; --line: #f1d9c6; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #1d1714; --fg: #f6e9df; --muted: #a8968a; --panel: #2a221e; --line: #3b302a; } }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 700 15px "Fredoka", system-ui, sans-serif; }
+    body { display: grid; place-items: center; padding: 16px; }
+    .player { width: min(100%, calc((100vh - 110px) * 16 / 9)); }
+    canvas { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; background: #000; box-shadow: 0 10px 40px rgba(120, 60, 30, 0.18); }
+    .bar { display: flex; gap: 12px; align-items: center; margin-top: 12px; }
+    button, a.btn { background: var(--panel); color: var(--fg); border: 2px solid var(--line); border-radius: 999px; padding: 6px 16px; font: inherit; cursor: pointer; text-decoration: none; }
+    button:hover, a.btn:hover { border-color: var(--accent); }
+    input[type=range] { flex: 1; accent-color: var(--accent); }
+    #time { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 100px; text-align: right; }
+    #err { color: #e8202f; }
+  </style>
+  <script type="importmap">
+    { "imports": {
+        "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body>
+  <div class="player">
+    <canvas id="out" width="1280" height="720"></canvas>
+    <div class="bar">
+      <a class="btn" href="index.html">☰</a>
+      <button id="play">▶</button>
+      <input id="scrub" type="range" min="0" step="0.01" value="0" />
+      <span id="time">0:00.0</span>
+      <button id="rec" title="Record a real-time WebM (video + audio)">● Record</button>
+    </div>
+    <p id="err"></p>
+    <audio id="audio" preload="auto"></audio>
+  </div>
+  <script type="module">
+    const ep = new URLSearchParams(location.search).get('ep') || 'berry-heist';
+    if (!/^[a-z0-9_-]+$/.test(ep)) throw new Error('bad episode id');
+    document.title = `Mochi · ${ep}`;
+    import(`./episodes/${ep}/src/main.js`).catch((e) => { document.getElementById('err').textContent = e.message; throw e; });
+  </script>
+</body>
+</html>

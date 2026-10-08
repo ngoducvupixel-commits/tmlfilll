@@ -1,0 +1,770 @@
+{
+ "duration": 74.47,
+ "cues": [
+  {
+   "id": "s1",
+   "t": 0.0,
+   "dur": 0.99,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_target",
+   "t": 1.045,
+   "dur": 1.385,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "pip_looks",
+   "t": 2.513,
+   "dur": 0.33,
+   "kind": "mark"
+  },
+  {
+   "id": "pip_twelve",
+   "t": 2.843,
+   "dur": 0.319,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_never",
+   "t": 3.355,
+   "dur": 1.141,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "milo_points",
+   "t": 4.55,
+   "dur": 0.5,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_last",
+   "t": 5.05,
+   "dur": 1.096,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "gulp",
+   "t": 6.256,
+   "dur": 0.25,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_beautiful",
+   "t": 6.561,
+   "dur": 0.526,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_focus",
+   "t": 7.198,
+   "dur": 0.473,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "s2",
+   "t": 7.836,
+   "dur": 0.72,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_3",
+   "t": 8.556,
+   "dur": 0.282,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "pip_2",
+   "t": 8.921,
+   "dur": 0.182,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "mimi_1",
+   "t": 9.186,
+   "dur": 0.321,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "whoosh",
+   "t": 9.534,
+   "dur": 0.45,
+   "kind": "sfx"
+  },
+  {
+   "id": "ding",
+   "t": 9.734,
+   "dur": 1.2,
+   "kind": "sfx"
+  },
+  {
+   "id": "thud",
+   "t": 10.234,
+   "dur": 0.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "skid",
+   "t": 10.284,
+   "dur": 0.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "glasses_slide",
+   "t": 10.834,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "silence2",
+   "t": 11.244,
+   "dur": 1.0,
+   "kind": "mark"
+  },
+  {
+   "id": "pip_stealthy",
+   "t": 12.244,
+   "dur": 0.477,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_thanks",
+   "t": 12.941,
+   "dur": 0.548,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "s3",
+   "t": 13.709,
+   "dur": 0.44,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_pip",
+   "t": 14.149,
+   "dur": 0.283,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "pip_waiting",
+   "t": 14.596,
+   "dur": 1.12,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "zip",
+   "t": 15.771,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "device_out",
+   "t": 16.071,
+   "dur": 0.39,
+   "kind": "mark"
+  },
+  {
+   "id": "moss_why",
+   "t": 16.571,
+   "dur": 0.949,
+   "kind": "vo",
+   "who": "moss"
+  },
+  {
+   "id": "pip_8000",
+   "t": 17.685,
+   "dur": 0.817,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "attach",
+   "t": 18.557,
+   "dur": 0.28,
+   "kind": "mark"
+  },
+  {
+   "id": "beep",
+   "t": 18.837,
+   "dur": 0.18,
+   "kind": "sfx"
+  },
+  {
+   "id": "brrr",
+   "t": 19.044,
+   "dur": 1.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_watch",
+   "t": 19.644,
+   "dur": 0.416,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "pop",
+   "t": 20.198,
+   "dur": 0.12,
+   "kind": "sfx"
+  },
+  {
+   "id": "boing",
+   "t": 20.238,
+   "dur": 0.7,
+   "kind": "sfx"
+  },
+  {
+   "id": "slap",
+   "t": 20.398,
+   "dur": 0.55,
+   "kind": "sfx"
+  },
+  {
+   "id": "silence3",
+   "t": 20.78,
+   "dur": 1.0,
+   "kind": "mark"
+  },
+  {
+   "id": "mimi_liked",
+   "t": 21.78,
+   "dur": 0.503,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "pip_thankyou",
+   "t": 22.448,
+   "dur": 0.366,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "zap",
+   "t": 22.979,
+   "dur": 0.6,
+   "kind": "sfx"
+  },
+  {
+   "id": "laser_1",
+   "t": 23.334,
+   "dur": 1.721,
+   "kind": "vo",
+   "who": "laser"
+  },
+  {
+   "id": "pip_nonono",
+   "t": 25.434,
+   "dur": 0.404,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "bonk1",
+   "t": 25.834,
+   "dur": 0.35,
+   "kind": "sfx"
+  },
+  {
+   "id": "bonk2",
+   "t": 26.184,
+   "dur": 0.35,
+   "kind": "sfx"
+  },
+  {
+   "id": "laser_2",
+   "t": 26.539,
+   "dur": 0.495,
+   "kind": "vo",
+   "who": "laser"
+  },
+  {
+   "id": "facepalm",
+   "t": 27.089,
+   "dur": 0.33,
+   "kind": "mark"
+  },
+  {
+   "id": "s4",
+   "t": 27.529,
+   "dur": 0.17,
+   "kind": "mark"
+  },
+  {
+   "id": "sniff",
+   "t": 27.699,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "bobo_looks",
+   "t": 28.054,
+   "dur": 0.66,
+   "kind": "mark"
+  },
+  {
+   "id": "click",
+   "t": 28.714,
+   "dur": 0.08,
+   "kind": "sfx"
+  },
+  {
+   "id": "ding2",
+   "t": 28.964,
+   "dur": 1.0,
+   "kind": "sfx"
+  },
+  {
+   "id": "turn_heads",
+   "t": 29.429,
+   "dur": 0.66,
+   "kind": "mark"
+  },
+  {
+   "id": "bobo_sits",
+   "t": 30.089,
+   "dur": 0.33,
+   "kind": "mark"
+  },
+  {
+   "id": "moss_about",
+   "t": 30.419,
+   "dur": 1.433,
+   "kind": "vo",
+   "who": "moss"
+  },
+  {
+   "id": "milo_nope",
+   "t": 32.016,
+   "dur": 0.562,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "s5",
+   "t": 32.798,
+   "dur": 0.17,
+   "kind": "mark"
+  },
+  {
+   "id": "shimmer",
+   "t": 32.968,
+   "dur": 2.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "push_mochi",
+   "t": 32.968,
+   "dur": 0.77,
+   "kind": "mark"
+  },
+  {
+   "id": "pip_rich",
+   "t": 33.738,
+   "dur": 0.371,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "mimi_one",
+   "t": 34.274,
+   "dur": 0.684,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "pip_emo",
+   "t": 35.123,
+   "dur": 0.516,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "reach",
+   "t": 35.749,
+   "dur": 0.72,
+   "kind": "mark"
+  },
+  {
+   "id": "lightswitch",
+   "t": 36.469,
+   "dur": 0.25,
+   "kind": "sfx"
+  },
+  {
+   "id": "s6",
+   "t": 36.719,
+   "dur": 3.0,
+   "kind": "mark"
+  },
+  {
+   "id": "buzz",
+   "t": 36.719,
+   "dur": 3.0,
+   "kind": "sfx"
+  },
+  {
+   "id": "laser_3",
+   "t": 39.719,
+   "dur": 0.521,
+   "kind": "vo",
+   "who": "laser"
+  },
+  {
+   "id": "bonk3",
+   "t": 40.378,
+   "dur": 0.35,
+   "kind": "sfx"
+  },
+  {
+   "id": "withdraw",
+   "t": 40.733,
+   "dur": 0.5,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_lumi",
+   "t": 41.233,
+   "dur": 0.298,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "lumi_milo",
+   "t": 41.723,
+   "dur": 0.48,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "milo_funny",
+   "t": 42.396,
+   "dur": 0.566,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "lumi_scan",
+   "t": 43.017,
+   "dur": 0.39,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_doubt",
+   "t": 43.407,
+   "dur": 0.663,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "milo_security",
+   "t": 44.263,
+   "dur": 1.513,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "lumi_looks",
+   "t": 45.859,
+   "dur": 1.43,
+   "kind": "mark"
+  },
+  {
+   "id": "moss_plant",
+   "t": 47.289,
+   "dur": 1.002,
+   "kind": "vo",
+   "who": "moss"
+  },
+  {
+   "id": "plop",
+   "t": 48.456,
+   "dur": 0.2,
+   "kind": "sfx"
+  },
+  {
+   "id": "noreact",
+   "t": 48.656,
+   "dur": 0.5,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_five",
+   "t": 49.156,
+   "dur": 1.197,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "milo_glance",
+   "t": 50.407,
+   "dur": 0.44,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_run",
+   "t": 50.847,
+   "dur": 0.309,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "slowmo",
+   "t": 51.212,
+   "dur": 2.31,
+   "kind": "mark"
+  },
+  {
+   "id": "fwip1",
+   "t": 51.412,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "softpoof",
+   "t": 52.212,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "tap1",
+   "t": 52.812,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_uhoh",
+   "t": 53.312,
+   "dur": 0.283,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "snap",
+   "t": 54.212,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "fwip2",
+   "t": 54.812,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "crash",
+   "t": 55.607,
+   "dur": 1.6,
+   "kind": "sfx"
+  },
+  {
+   "id": "boing2",
+   "t": 55.827,
+   "dur": 0.7,
+   "kind": "sfx"
+  },
+  {
+   "id": "paper_poof",
+   "t": 56.047,
+   "dur": 0.6,
+   "kind": "sfx"
+  },
+  {
+   "id": "splash",
+   "t": 56.267,
+   "dur": 0.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "chaos_end",
+   "t": 56.567,
+   "dur": 0.17,
+   "kind": "mark"
+  },
+  {
+   "id": "s10",
+   "t": 56.847,
+   "dur": 0.77,
+   "kind": "mark"
+  },
+  {
+   "id": "nom1",
+   "t": 57.617,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "nom2",
+   "t": 57.974,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "nom3",
+   "t": 58.332,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "bobo_stops",
+   "t": 58.662,
+   "dur": 0.61,
+   "kind": "mark"
+  },
+  {
+   "id": "nom4",
+   "t": 59.272,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "cut_lumi",
+   "t": 59.547,
+   "dur": 1.8,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_so",
+   "t": 61.347,
+   "dur": 0.416,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "lumi_who",
+   "t": 62.147,
+   "dur": 1.603,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "both_him",
+   "t": 63.942,
+   "dur": 0.301,
+   "kind": "vo",
+   "who": "both"
+  },
+  {
+   "id": "woof",
+   "t": 64.326,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "s11",
+   "t": 64.846,
+   "dur": 0.44,
+   "kind": "mark"
+  },
+  {
+   "id": "sigh",
+   "t": 65.286,
+   "dur": 0.9,
+   "kind": "sfx"
+  },
+  {
+   "id": "drawer",
+   "t": 65.641,
+   "dur": 0.6,
+   "kind": "sfx"
+  },
+  {
+   "id": "shimmer2",
+   "t": 66.041,
+   "dur": 2.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "reveal",
+   "t": 66.041,
+   "dur": 0.77,
+   "kind": "mark"
+  },
+  {
+   "id": "pip_said",
+   "t": 66.811,
+   "dur": 0.94,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "milo_was",
+   "t": 67.943,
+   "dur": 0.814,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "milo_points_up",
+   "t": 68.812,
+   "dur": 0.39,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_shelf",
+   "t": 69.202,
+   "dur": 0.688,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "lumi_stare",
+   "t": 70.0,
+   "dur": 0.9,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_out",
+   "t": 70.9,
+   "dur": 0.446,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "black",
+   "t": 71.512,
+   "dur": 0.6,
+   "kind": "mark"
+  },
+  {
+   "id": "pip_road",
+   "t": 72.112,
+   "dur": 0.806,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "thud_end",
+   "t": 73.082,
+   "dur": 0.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_ow",
+   "t": 73.547,
+   "dur": 0.176,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "end",
+   "t": 73.723,
+   "dur": 0.55,
+   "kind": "mark"
+  }
+ ]
+}

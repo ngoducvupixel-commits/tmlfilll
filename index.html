@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mochi Channel</title>
+  <style>
+    @font-face { font-family: "Fredoka"; src: url("engine/assets/fonts/Fredoka-Bold.ttf") format("truetype"); font-weight: 700; }
+    :root { --bg: #fff4ea; --fg: #4a2a1a; --muted: #9a7f70; --card: #ffffff; --line: #f1d9c6; --accent: #ff8a2a; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #1d1714; --fg: #f6e9df; --muted: #a8968a; --card: #2a221e; --line: #3b302a; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 700 16px "Fredoka", system-ui, sans-serif; padding: 32px 16px; }
+    main { max-width: 860px; margin: 0 auto; }
+    h1 { font-size: 44px; margin: 0 0 4px; color: var(--accent); }
+    p { color: var(--muted); margin: 0 0 24px; }
+    ul { list-style: none; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+    a { display: block; padding: 18px; background: var(--card); border: 2px solid var(--line); border-radius: 18px; color: inherit; text-decoration: none; }
+    a:hover { border-color: var(--accent); }
+    small { display: block; color: var(--muted); margin-top: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Mochi Family</h1>
+    <p>Small friends for big ideas · every episode is rendered live from code</p>
+    <ul id="eps"></ul>
+  </main>
+  <script type="module">
+    const eps = ['berry-heist', 'do-not-press', 'abc-song', 'model-sheet'];
+    const list = document.getElementById('eps');
+    for (const ep of eps) {
+      const meta = await fetch(`episodes/${ep}/episode.json`).then((r) => r.json()).catch(() => ({ title: ep, kind: '' }));
+      const li = document.createElement('li'); const a = document.createElement('a');
+      a.href = `player.html?ep=${ep}`; a.textContent = meta.title;
+      const s = document.createElement('small'); s.textContent = `${meta.kind} · ${ep}`; a.append(s); li.append(a); list.append(li);
+    }
+  </script>
+</body>
+</html>
