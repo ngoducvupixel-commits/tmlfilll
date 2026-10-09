@@ -33,4 +33,10 @@ Start from `episodes/_template/src/` (it is a minimal working example). Engine A
 7. Sets: chunky primitives, pastel `soft()` colours, labels via `canvasTex` (Fredoka font).
    Night = low hemi + `scene.environmentIntensity = 0.12` + emissive dots; day = hemi 1.2.
 
+8. **Cute look** (channel default from `surprise-party` on): call `useLook('jelly')` (from
+   `engine/characters/mochi.js`) at the top of `build()` before creating characters/props, and in
+   `src/main.js` use `compositor(renderer, film, { look: 'dreamy' })`. Keep lighting moderate
+   (hemi ≈ 0.6, fill ≈ 0.55, `scene.environmentIntensity` ≈ 0.45) — bloom washes bright pastel walls out.
+   `episodes/surprise-party/src/set.js` has a reusable pastel living room (`buildRoom`) and party props.
+
 Then verify with the `mochi-review` skill — don't guess framing, look at a contact sheet.

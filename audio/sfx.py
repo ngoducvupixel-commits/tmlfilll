@@ -92,7 +92,27 @@ def sigh():
 def gulp():
     d = 0.25; t = t_(d); return norm(tone(np.interp(t, [0, d], [300, 140]), d) * np.sin(np.pi * t / d) ** 2, 0.4)
 
+def keys():
+    """key ring jingle + lock click (someone is coming home)"""
+    d = 0.9; t = t_(d); out = np.zeros(len(t))
+    for s0 in (0.0, 0.07, 0.16, 0.22, 0.31):
+        i = int(s0 * SR); seg = sum(tone(f, d - s0) * np.exp(-t_(d - s0) / 0.05) for f in (3100 + 400 * s0, 4700, 6200)) * 0.3
+        out[i:] += seg[: len(out) - i]
+    out[int(0.7 * SR):] += (bp(noise(0.2), 1500, 6000) * np.exp(-t_(0.2) / 0.01) * 1.5)[: len(out) - int(0.7 * SR)]
+    return norm(out, 0.4)
+def splat():
+    d = 0.4; t = t_(d); return norm(lp(noise(d), 1800) * np.minimum(1, t / 0.004) * np.exp(-t / 0.07) + 0.4 * tone(np.interp(t, [0, d], [300, 90]), d) * np.exp(-t / 0.1), 0.7)
+def roll(d=1.4):
+    t = t_(d); return norm(lp(noise(d), 400) * (0.7 + 0.3 * np.sin(2 * np.pi * 11 * t)) * np.minimum(1, np.minimum(t, d - t) / 0.15), 0.3)
+def horn():
+    d = 0.8; t = t_(d); f = np.interp(t, [0, 0.1, d], [380, 520, 500])
+    return norm(lp(signal.square(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, t / 0.03) * np.minimum(1, (d - t) / 0.2), 2500), 0.35)
+def confetti():
+    d = 1.2; t = t_(d); return norm(bp(noise(d), 3000, 9000) * (rng.random(len(t)) > 0.97) * np.exp(-t / 0.5), 0.25)
+
 SFX = {
+    # Surprise! party kit
+    'keys': keys, 'splat': splat, 'roll': roll, 'horn': horn, 'confetti': confetti,
     # from the DO NOT PRESS short
     'tick': sfx_tick, 'glasses': sfx_glasses, 'button': sfx_button, 'hum_ramp': sfx_hum_ramp, 'alarm': sfx_alarm, 'clunk': sfx_clunk,
     'poof': sfx_poof, 'smoke': sfx_smoke, 'yip': sfx_yip, 'snort': sfx_snort, 'giggle': giggle,

@@ -6,6 +6,9 @@
   - Rounded boxes, pastel sets, `MeshPhysicalMaterial` via `soft(color)`, soft shadows.
   - Studio environment map (`createRenderer()`).
   - Sets are dioramas made of chunky primitives (`engine/kit.js`), never realistic.
+- **Cute look** (default for new episodes): glossy jelly characters (`useLook('jelly')`), dreamy
+  compositor (soft bloom, warm grade, vignette), sunny pastel rooms full of small decor: plants,
+  bunting, balloons, pictures, a window with sky. See `episodes/surprise-party`.
 - **Frame**: 1280×720 at 30 fps.
 - **Captions**: Fredoka Bold, white with a dark outline, speaker name in the character colour
   (`engine/overlay.js`). Caption every spoken line.

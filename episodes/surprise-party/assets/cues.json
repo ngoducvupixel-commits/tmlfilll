@@ -1,0 +1,309 @@
+{
+ "duration": 44.39,
+ "cues": [
+  {
+   "id": "s1",
+   "t": 0.0,
+   "dur": 3.2,
+   "kind": "mark"
+  },
+  {
+   "id": "mimi_left",
+   "t": 3.2,
+   "dur": 0.537,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "milo_shuffle",
+   "t": 3.837,
+   "dur": 1.2,
+   "kind": "mark"
+  },
+  {
+   "id": "mimi_more",
+   "t": 5.137,
+   "dur": 0.475,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "milo_lean",
+   "t": 5.712,
+   "dur": 0.9,
+   "kind": "mark"
+  },
+  {
+   "id": "banner_fall",
+   "t": 6.662,
+   "dur": 0.6,
+   "kind": "sfx"
+  },
+  {
+   "id": "banner_thud",
+   "t": 6.962,
+   "dur": 0.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "banner_still",
+   "t": 7.412,
+   "dur": 1.0,
+   "kind": "mark"
+  },
+  {
+   "id": "moss_fine",
+   "t": 8.412,
+   "dur": 0.815,
+   "kind": "vo",
+   "who": "moss"
+  },
+  {
+   "id": "roll",
+   "t": 9.627,
+   "dur": 1.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_behold",
+   "t": 10.327,
+   "dur": 0.828,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "shimmer",
+   "t": 10.527,
+   "dur": 2.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "mimi_beautiful",
+   "t": 11.354,
+   "dur": 0.666,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "sniff",
+   "t": 12.221,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "bobo_drool",
+   "t": 12.521,
+   "dur": 1.2,
+   "kind": "mark"
+  },
+  {
+   "id": "keys",
+   "t": 13.921,
+   "dur": 0.9,
+   "kind": "sfx"
+  },
+  {
+   "id": "moss_coming",
+   "t": 14.371,
+   "dur": 0.765,
+   "kind": "vo",
+   "who": "moss"
+  },
+  {
+   "id": "milo_hide",
+   "t": 15.336,
+   "dur": 0.936,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "scramble1",
+   "t": 16.322,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "scramble2",
+   "t": 16.572,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "scramble3",
+   "t": 16.822,
+   "dur": 0.5,
+   "kind": "sfx"
+  },
+  {
+   "id": "hidden",
+   "t": 17.222,
+   "dur": 1.2,
+   "kind": "mark"
+  },
+  {
+   "id": "door",
+   "t": 18.522,
+   "dur": 0.08,
+   "kind": "sfx"
+  },
+  {
+   "id": "lumi_enters",
+   "t": 18.602,
+   "dur": 1.8,
+   "kind": "mark"
+  },
+  {
+   "id": "hide_hold",
+   "t": 20.402,
+   "dur": 2.6,
+   "kind": "mark"
+  },
+  {
+   "id": "popper",
+   "t": 23.002,
+   "dur": 0.12,
+   "kind": "sfx"
+  },
+  {
+   "id": "confetti",
+   "t": 23.052,
+   "dur": 1.2,
+   "kind": "sfx"
+  },
+  {
+   "id": "pip_oops",
+   "t": 23.652,
+   "dur": 0.545,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "all_surprise",
+   "t": 24.496,
+   "dur": 0.809,
+   "kind": "vo",
+   "who": "all"
+  },
+  {
+   "id": "horn",
+   "t": 24.546,
+   "dur": 0.8,
+   "kind": "sfx"
+  },
+  {
+   "id": "mimi_happy",
+   "t": 25.705,
+   "dur": 1.045,
+   "kind": "vo",
+   "who": "mimi"
+  },
+  {
+   "id": "lumi_stare",
+   "t": 26.95,
+   "dur": 1.2,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_birthday",
+   "t": 28.15,
+   "dur": 0.95,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "milo_yes",
+   "t": 29.401,
+   "dur": 0.367,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "lumi_checks",
+   "t": 29.968,
+   "dur": 1.0,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_next",
+   "t": 30.968,
+   "dur": 0.927,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "next_week_pause",
+   "t": 31.995,
+   "dur": 2.2,
+   "kind": "mark"
+  },
+  {
+   "id": "milo_early",
+   "t": 34.195,
+   "dur": 0.845,
+   "kind": "vo",
+   "who": "milo"
+  },
+  {
+   "id": "pip_eat",
+   "t": 35.64,
+   "dur": 1.105,
+   "kind": "vo",
+   "who": "pip"
+  },
+  {
+   "id": "reveal_bobo",
+   "t": 37.046,
+   "dur": 1.8,
+   "kind": "mark"
+  },
+  {
+   "id": "nom1",
+   "t": 37.346,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "nom2",
+   "t": 37.746,
+   "dur": 0.22,
+   "kind": "sfx"
+  },
+  {
+   "id": "lumi_smile",
+   "t": 39.046,
+   "dur": 1.0,
+   "kind": "mark"
+  },
+  {
+   "id": "lumi_best",
+   "t": 40.046,
+   "dur": 1.096,
+   "kind": "vo",
+   "who": "lumi"
+  },
+  {
+   "id": "woof",
+   "t": 41.441,
+   "dur": 0.3,
+   "kind": "sfx"
+  },
+  {
+   "id": "cream",
+   "t": 41.491,
+   "dur": 0.4,
+   "kind": "sfx"
+  },
+  {
+   "id": "splat_hold",
+   "t": 41.791,
+   "dur": 1.4,
+   "kind": "mark"
+  },
+  {
+   "id": "black",
+   "t": 43.191,
+   "dur": 1.0,
+   "kind": "mark"
+  }
+ ]
+}

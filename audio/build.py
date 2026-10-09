@@ -25,6 +25,9 @@ from sfx import SFX                                                             
 from voices import CAST, WHISPER                                                  # noqa: E402
 
 
+GROUPS = {'both': ('milo', 'pip'), 'all': ('milo', 'pip', 'mimi', 'moss')}   # who='all' → everyone shouts
+
+
 class Sheet:
     def __init__(self, rate_k=1.0, gap_scale=1.0, mark_scale=1.0, keep=(), cast=None, duration=None,
                  silences=(), room_ranges=None, room_gain=0.8, sfx_hold=0.3):
@@ -49,9 +52,11 @@ class Sheet:
     # -------------------------------------------------------------- synthesis
     def voice(self, b):
         who = b['who']
-        if who == 'both':
-            a, p = self.voice(dict(b, who='milo')), self.voice(dict(b, who='pip'))
-            n = max(len(a), len(p)); out = np.zeros(n); out[:len(a)] += a; out[:len(p)] += p; return norm(out, 0.85)
+        if who in GROUPS:   # several characters shouting together, slightly staggered
+            parts = [self.voice(dict(b, who=w)) for w in GROUPS[who]]
+            lag = int(SR * 0.025); n = max(len(x) + i * lag for i, x in enumerate(parts)); out = np.zeros(n)
+            for i, x in enumerate(parts): out[i * lag:i * lag + len(x)] += x
+            return norm(out, 0.85)
         c = WHISPER if b.get('whisper') else self.cast['pip' if who == 'laser' else who]
         x = speak(b['text'], c['voice'], int(c['rate'] * self.rate_k), c['pitch'], c['range'])
         if who == 'laser':   # Pip's self-recorded voice through a cheap speaker
@@ -112,7 +117,7 @@ class Sheet:
         for b in self.B:
             if b['kind'] == 'vo':
                 x = sounds[b['id']]; place(x, b['t']); write_wav(f"{out}/vo/{b['id']}.wav", x)
-                for w in (('milo', 'pip') if b['who'] == 'both' else (b['who'],)):
+                for w in GROUPS.get(b['who'], (b['who'],)):
                     lips.setdefault(w, []).append({'t': round(b['t'], 3), 'v': self.envelope(x)})
             elif b['kind'] == 'sfx':
                 x = sounds[b['name']]; place(x, b['t'], b['gain']); write_wav(f"{out}/sfx/{b['name']}.wav", x)

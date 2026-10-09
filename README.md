@@ -5,6 +5,7 @@ Small friends, big ideas. This repo makes every Mochi Family video **from code**
 
 | Episode | Kind | Length |
 |---|---|---|
+| [`surprise-party`](episodes/surprise-party) — *Surprise!* (cute look) | comedy short | 44 s |
 | [`berry-heist`](episodes/berry-heist) — *The Last Berry Mochi* | comedy short | 74 s |
 | [`do-not-press`](episodes/do-not-press) — *DO NOT PRESS* | comedy short | 35 s |
 | [`abc-song`](episodes/abc-song) — *Mochi Family ABC Song* | kids song | 60 s |

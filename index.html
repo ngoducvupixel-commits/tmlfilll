@@ -26,7 +26,7 @@
     <ul id="eps"></ul>
   </main>
   <script type="module">
-    const eps = ['berry-heist', 'do-not-press', 'abc-song', 'model-sheet'];
+    const eps = ['surprise-party', 'berry-heist', 'do-not-press', 'abc-song', 'model-sheet'];
     const list = document.getElementById('eps');
     for (const ep of eps) {
       const meta = await fetch(`episodes/${ep}/episode.json`).then((r) => r.json()).catch(() => ({ title: ep, kind: '' }));

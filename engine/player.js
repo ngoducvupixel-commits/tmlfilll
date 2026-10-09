@@ -2,6 +2,10 @@
 // real-time WebM recording, and the window.__seek hook the offline renderer drives.
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 import { W, H, clamp } from './kit.js';
 
 export const FONT = '"Fredoka", system-ui, sans-serif';
@@ -69,8 +73,31 @@ export function startPlayer({ duration, audio: audioUrl, render, title = 'mochi'
   window.__ready = true;
 }
 
-/** Standard compositor for beat-sheet episodes: 3D frame → 2D overlay (captions etc.) */
-export function compositor(renderer, film) {
+/**
+ * Standard compositor for beat-sheet episodes: 3D frame → 2D overlay (captions etc.).
+ * look: 'plain' (default) or 'dreamy' — soft bloom on highlights + warm grade + vignette (cute key-art look).
+ */
+export function compositor(renderer, film, { look = 'plain' } = {}) {
   const ctx = document.getElementById('out').getContext('2d');
-  return (T) => { film.update(T); renderer.render(film.scene, film.camera); ctx.drawImage(renderer.domElement, 0, 0, W, H); film.overlay(ctx, T, FONT); };
+  let draw3d = () => renderer.render(film.scene, film.camera);
+  if (look === 'dreamy') {
+    const composer = new EffectComposer(renderer);
+    const pass = new RenderPass(film.scene, film.camera);
+    composer.addPass(pass);
+    composer.addPass(new UnrealBloomPass(new THREE.Vector2(W, H), 0.16, 0.5, 0.94));
+    composer.addPass(new OutputPass());
+    draw3d = () => { pass.camera = film.camera; composer.render(); };
+  }
+  const vignette = look === 'dreamy' ? (() => {
+    const g = ctx.createRadialGradient(W / 2, H / 2, H * 0.45, W / 2, H / 2, W * 0.72);
+    g.addColorStop(0, 'rgba(255,220,235,0)'); g.addColorStop(1, 'rgba(90,40,70,0.32)'); return g;
+  })() : null;
+  return (T) => {
+    film.update(T); draw3d(); ctx.drawImage(renderer.domElement, 0, 0, W, H);
+    if (vignette) {
+      ctx.save(); ctx.globalCompositeOperation = 'soft-light'; ctx.fillStyle = 'rgba(255,190,150,0.08)'; ctx.fillRect(0, 0, W, H); ctx.restore();   // warm grade
+      ctx.fillStyle = vignette; ctx.fillRect(0, 0, W, H);
+    }
+    film.overlay(ctx, T, FONT);
+  };
 }

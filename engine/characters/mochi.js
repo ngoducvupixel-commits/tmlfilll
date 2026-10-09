@@ -8,7 +8,15 @@ import { rbox, box, cyl, sph, tor, cone, at, group, canvasTex } from '../kit.js'
 const BEAT_S = 60 / 74.07; // song tempo (74 BPM)
 
 // soft vinyl-toy look
-export const soft = (color, o = {}) => new THREE.MeshPhysicalMaterial({ color, roughness: 0.5, clearcoat: 0.35, clearcoatRoughness: 0.45, sheen: 0.4, sheenColor: 0xffffff, sheenRoughness: 0.6, ...o });
+const LOOKS = {
+  vinyl: { roughness: 0.5, clearcoat: 0.35, clearcoatRoughness: 0.45, sheen: 0.4, sheenColor: 0xffffff, sheenRoughness: 0.6 },
+  // glossy "jelly mochi" — wet highlights like the channel key art; opt in per episode with useLook('jelly')
+  jelly: { roughness: 0.32, clearcoat: 1.0, clearcoatRoughness: 0.12, sheen: 0.6, sheenColor: 0xffffff, sheenRoughness: 0.4, iridescence: 0.08 },
+};
+let LOOK = LOOKS.vinyl;
+/** switch the material look for everything built afterwards ('vinyl' default, 'jelly') */
+export const useLook = (name) => { LOOK = LOOKS[name] || LOOKS.vinyl; };
+export const soft = (color, o = {}) => new THREE.MeshPhysicalMaterial({ color, ...LOOK, ...o });
 const INK = 0x1c1420;
 const ink = () => new THREE.MeshPhysicalMaterial({ color: INK, roughness: 0.15, clearcoat: 1 });
 
